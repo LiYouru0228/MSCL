@@ -27,4 +27,4 @@ $ python train.py
 ```
 
 ## Statments
-This is open demo implementation is only used for academic research, therefore it does not represent any real business situation in MYBank, Ant Group.
+This open demo implementation is only used for academic research, therefore it does not represent any real business situation in MYBank, Ant Group.

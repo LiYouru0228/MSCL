@@ -26,5 +26,5 @@ Then, you can start to train the model and evaluate the performance by run:
 $ python train.py
 ```
 
-## Statments
+## Statements
 This open demo implementation is only used for academic research, therefore it does not represent any real business situation in MYBank, Ant Group.

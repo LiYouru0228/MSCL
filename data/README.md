@@ -1,15 +1,23 @@
 # Upload Data Guidelines:
 Upload the dataset for your own task here. The dataset should be organized as a python 'dict', and it contains the following parts:
-1. entityid2baseinfo
-    + type: dict
-    + format: {entityid: one-hot encoding baseinfo list}
-2. kg
-    + type: dict
-    + format: {head entityId: [(tail entityId, relationId),...]}
-3. entityid2type
-    + type: dict
-    + format: {entityId: "B"/"C", etc.}
-4. sample_dict
-    + type: dict
-    + format: {dataset name: numpy.ndarray}
-      +  raw demo: <enterpriseID1, enterpriseID2, lable>
++ Part 1:
+    + key:"entityid2baseinfo"
+    + value:
+        + type: dict
+        + format: {entityid: one-hot encoding baseinfo list}
++ Part 2:
+    + key:"kg"
+    + value:
+        + type: dict
+        + format: {head entityId: [(tail entityId, relationId),...]}
++ Part 3:
+    + key:"entityid2type"
+    + value:
+        + type: dict
+        + format: {entityId: "B"/"C", etc.}
++ Part 4:
+    + key: "sample_dict"
+    + value:
+        + type: dict
+        + format: {dataset name: numpy.ndarray}
+           +  raw demo: <enterpriseID1, enterpriseID2, lable>

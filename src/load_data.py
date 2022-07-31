@@ -44,12 +44,12 @@ def build_knowledge_graph(kg, isNew = False):
             for end in kg_edges_list[start]:
                 knowledge_graph.add_edge(start,end)
                 
-        f_knowledge_graph = open('knowledge_graph.pkl','wb')
+        f_knowledge_graph = open('./data/knowledge_graph.pkl','wb')
         pickle.dump((knowledge_graph, pair2relation), f_knowledge_graph)
         f_knowledge_graph.close()
     else:
-        knowledge_graph = pickle.load(open("knowledge_graph.pkl", "rb"))[0]
-        pair2relation = pickle.load(open("knowledge_graph.pkl", "rb"))[1]
+        knowledge_graph = pickle.load(open("./data/knowledge_graph.pkl", "rb"))[0]
+        pair2relation = pickle.load(open("./data/knowledge_graph.pkl", "rb"))[1]
     
     _print_graph_statistic(knowledge_graph)
     
@@ -304,7 +304,7 @@ def DataPreprocessing(links, samples, sampleSize, entityid2base_info):
 
 def pipline(args):
     print('load data...')
-    f_smc_dict = open("./smc_dict-v3.pkl", "rb")
+    f_smc_dict = open("./data/smc_dict-v3.pkl", "rb")
     smc_dict = pickle.load(f_smc_dict)
 
     knowledge_graph, pair2relation = build_knowledge_graph(smc_dict['kg'], isNew = True)

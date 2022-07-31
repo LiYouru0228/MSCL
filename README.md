@@ -19,11 +19,11 @@ The code has been tested running under Python 3.9.7, and some main following pac
 Firstly, you can run "load_data.py" to finish the data preprocessing and this command can save the preprocessed data into some pickel files. Therefore, you only need to run it the first time.
 
 ```
-$ python load_data.py
+$ python ./src/load_data.py
 ```
 Then, you can start to train the model and evaluate the performance by run:
 ```
-$ python train.py
+$ python ./src/train.py
 ```
 
 ## Statements

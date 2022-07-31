@@ -273,21 +273,18 @@ class MSCL(nn.Module):
         self.relu = nn.ReLU()
 
     def forward(self, input, input2, each_epoch, step):
-        
-        # input shape [batch_size, path_num, emb_dim]
         batch_size = input.size(0)
         feature_dim = input2.size(1)
-        assert(feature_dim == self.input_dim)# input Tensor : 256 * 48 * 76
+        assert(feature_dim == self.input_dim)
         assert(self.d_model % self.MHD_num_head == 0)
 
-        # forward
         pair_info_embedd = self.tanh(self.pair_proj_main(input)).unsqueeze(1)
         Paths_embeded_input = input2
         
         Attention_embeded_input = torch.cat((Paths_embeded_input, pair_info_embedd), 1)
         posi_input = self.dropout(Attention_embeded_input) 
 
-        contexts = self.SublayerConnection(posi_input, lambda x: self.MultiHeadedAttention(posi_input, posi_input, posi_input, None)
+        contexts = self.SublayerConnection(posi_input, lambda x: self.MultiHeadedAttention(posi_input, posi_input, posi_input, None))
     
         DeCov_loss = contexts[1]
         contexts = contexts[0]

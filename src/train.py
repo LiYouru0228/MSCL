@@ -245,7 +245,7 @@ def train(args):
             torch.save(state, file_name)
             print('\n------------ Save best model ------------\n')
             print ('testing experimental report:')
-            Bootstrap(y_true,y_pred,test_res)
+            Bootstrap(y_true, y_pred, test_res)
             
     print('=====DONE=====')
 

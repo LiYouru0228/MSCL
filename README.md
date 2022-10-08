@@ -7,7 +7,7 @@ This repository is the implementation of the paper entitled as Exploring Meta-ta
 This is a graphical illustration of meta-tag supported connectivity representation learning for explainable SMEs supply chain prediction. It is mainly composed of three modules: (a) Meta-tag Collaborative Filtering $\textbf{(MCF)}$; (b) DPPs-induced Hierarchical Paths Sampling $\textbf{(DHPS)}$; (c)Connectivity Representation Learning $\textbf{(CRL)}$.
 
 ## Required packages:
-The code has been tested running under Python 3.9.7, and some main following packages installed and their version are:
+The code has been tested by running a demo pipline under Python 3.9.7, and some main following packages installed and their version are:
 - PyTorch == 1.10.1
 - numpy == 1.21.2
 - dppy == 0.3.2

@@ -1,5 +1,5 @@
 # Upload Data Guidelines:
-Upload the dataset for your own task here. The dataset should be organized as a python 'dict', and it contains the following parts:
+Upload the dataset for your own task here. The format of the dataset should be organized as a python 'dict', and it contains the following parts:
 + Part 1:
     + key:"entityid2baseinfo"
     + value:

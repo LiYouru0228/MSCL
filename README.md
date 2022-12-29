@@ -1,11 +1,11 @@
-# Exploring Meta-tag Supported Connectivity in Large-scale Financial Knowledge Graph for Explainable SMEs Supply Chain Prediction
+# Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining
 
 ## Overview
-This repository is the implementation of the paper entitled as Exploring Meta-tag Supported Connectivity in Large-scale Financial Knowledge Graph for Explainable SMEs Supply Chain Prediction.
+This repository is the implementation of the paper entitled as Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining.
 
 ![](https://github.com/LiYouru0228/MSCL/blob/main/MSCL.png?raw=true)
 
-This is a graphical illustration of meta-tag supported connectivity representation learning for explainable SMEs supply chain prediction. It is mainly composed of three modules: (a) Meta-tag Collaborative Filtering $\textbf{(MCF)}$; (b) DPPs-induced Hierarchical Paths Sampling $\textbf{(DHPS)}$; (c)Connectivity Representation Learning $\textbf{(CRL)}$.
+This is a graphical illustration of meta-tag supported connectivity representation learning for SMEs supply chain mining. It is mainly composed of three modules: (a) Meta-tag Collaborative Filtering $\textbf{(MCF)}$; (b) DPPs-induced Hierarchical Paths Sampling $\textbf{(DHPS)}$; (c)Connectivity Representation Learning $\textbf{(CRL)}$.
 
 ## Required packages:
 The code has been tested by running a demo pipline under Python 3.9.7, and some main following packages installed and their version are:

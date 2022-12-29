@@ -232,20 +232,8 @@ def train(args):
         y_pred = np.array(y_pred)
         y_pred = np.stack([1 - y_pred, y_pred], axis=1)
         test_res = print_metrics_binary(y_true, y_pred)
-
-        cur_auroc = test_res['auroc']
-
-        if cur_auroc > max_roc:
-            max_roc = cur_auroc
-            state = {
-                'net': model.state_dict(),
-                'optimizer': optimizer.state_dict(),
-                'epoch': each_epoch
-            }
-            torch.save(state, file_name)
-            print('\n------------ Save best model ------------\n')
-            print ('testing experimental report:')
-            Bootstrap(y_true, y_pred, test_res)
+        print ('testing experimental report:')
+        Bootstrap(y_true, y_pred, test_res)
             
     print('=====DONE=====')
 

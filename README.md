@@ -1,7 +1,8 @@
 # Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining
 
 ## Overview
-This repository is the implementation of the paper entitled as Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining.
+This repository is the implementation of the paper entitled as Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining. ([TKDE'23](https://ieeexplore.ieee.org/abstract/document/10256685))
+> Youru Li, Zhenfeng Zhu, Linxun Chen, Bin Yang, Yaxi Wu, Xiaobo Guo, Bing Han, Yao Zhao: Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining. IEEE Transactions on Knowledge and Data Engineering (2023).
 
 ![](https://github.com/LiYouru0228/MSCL/blob/main/MSCL.png?raw=true)
 
@@ -25,6 +26,18 @@ $ python ./src/load_data.py
 Then, you can start to train the model and evaluate the performance by run:
 ```
 $ python ./src/train.py
+```
+
+## Citation 
+If you want to use our codes in your research, please cite:
+```
+@article{li2023exploring,
+  title={Exploring Large-scale Financial Knowledge Graph for SMEs Supply Chain Mining},
+  author={Li, Youru and Zhu, Zhenfeng and Chen, Linxun and Yang, Bin and Wu, Yaxi and Guo, Xiaobo and Han, Bing and Zhao, Yao},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2023},
+  publisher={IEEE}
+}
 ```
 
 ## Statements

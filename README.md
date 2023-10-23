@@ -18,7 +18,7 @@ The code has been tested by running a demo pipline under Python 3.9.7, and some 
 - scikit-learn == 1.0.1
 
 ## Running the code
-Firstly, you can run "load_data.py" to finish the data preprocessing and this command can save the preprocessed data into some pickel files. Therefore, you only need to run it the first time.
+Firstly, you can run "load_data.py" to finish the data preprocessing and this command can save the preprocessed data into some pickel files. Noted, you only need to run it the first time.
 
 ```
 $ python ./src/load_data.py
